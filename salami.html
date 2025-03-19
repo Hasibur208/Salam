@@ -1,0 +1,35 @@
+# Click Salami to Show Price
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salami Price</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #price {
+            display: none;
+            font-size: 24px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Click the Salami to See the Price</h1>
+    <button id="salamiButton">Salami</button>
+    <div id="price">Price: 500 BDT</div>
+
+    <script>
+        document.getElementById('salamiButton').onclick = function() {
+            document.getElementById('price').style.display = 'block';
+        };
+    </script>
+
+</body>
+</html>
